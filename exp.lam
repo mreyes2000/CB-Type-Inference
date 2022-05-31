@@ -1,0 +1,3 @@
+let tuple = (4, 5) in
+let rec f = \k . if k = 0 then 1 else k * (f (k - 1)) in 
+\g. g (f (#1 tuple), f (#2 tuple))
